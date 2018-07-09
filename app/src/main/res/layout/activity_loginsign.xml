@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/latnews"
+    tools:context="com.example.pradhyumna.newsproject.loginsign">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:textSize="50dp"
+        android:fontFamily="cursive"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:id="@+id/useret"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:id="@+id/passet"
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Login!"
+        android:textSize="20dp"
+        android:textColor="#FFFF00"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/images"
+        android:id="@+id/logbt"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:text="NEW USER SIGN UP HERE!!"
+        android:textColor="#FF0000"
+        android:layout_gravity="center"
+        android:id="@+id/newtv"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="SIGN UP"
+        android:textSize="20dp"
+        android:textColor="#FFFF00"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/images"
+        android:id="@+id/signbt"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gsign"
+        android:layout_weight="1">
+
+    </com.google.android.gms.common.SignInButton>
+    </LinearLayout>
+
+</LinearLayout>
